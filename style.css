@@ -27,3 +27,14 @@ div:only-child:not([class*="col-"]) {
 .gray {
     background: gray;
 }
+
+.yellow {
+    background: yellow;
+}
+
+body {
+    background-image: url('https://cdn.wallpapersafari.com/36/93/y4RjL1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: middle;
+}
