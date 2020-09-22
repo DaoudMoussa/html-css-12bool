@@ -5,16 +5,42 @@
 }
 
 body {
-    padding: 150px 0;
-    background-image: url('https://cdn.wallpapersafari.com/36/93/y4RjL1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: middle;
+    position: relative;
 }
 
+body img {
+    object-fit: cover;
+    width:100%;
+    animation: alarm 0.5s alternate 8;
+}
+
+@keyframes alarm {
+    from {}
+    to {filter: brightness(1.5)}
+}
+
+
 .batman {
-    width: 360px;
-    margin: auto;
+    animation: go-away 3s linear;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 300px;
+    left: 550px;
+}
+
+@keyframes go-away {
+    0%{}
+
+    40% {
+        transform: rotateX(45deg) rotateY(45deg) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(100px, -300px) scale(0.001, 0.001);
+        display: none;
+    }
+
 }
 
 .batman::after {
