@@ -4,8 +4,31 @@
     padding: 0;
 }
 
+body {
+    padding: 150px 0;
+    background-image: url('https://cdn.wallpapersafari.com/36/93/y4RjL1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: middle;
+}
+
+.batman {
+    width: 360px;
+    margin: auto;
+}
+
+.batman::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body .container > div {
+    width: calc(12 * 10px);  /*ncolonne * larghezza colonna*/
+}
+
 div:only-child:not([class*="col-"]) {
-    height: 40px;
+    height: 10px;
 }
 
 .black {
@@ -30,11 +53,4 @@ div:only-child:not([class*="col-"]) {
 
 .yellow {
     background: yellow;
-}
-
-body {
-    background-image: url('https://cdn.wallpapersafari.com/36/93/y4RjL1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: middle;
 }
