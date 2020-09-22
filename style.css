@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+div:only-child:not([class*="col-"]) {
+    height: 40px;
+}
+
+.black {
+    background: black
+}
+
+.light-black {
+    background: #332c38;
+}
+
+.light-brown {
+    background: #d9b480;
+}
+
+.white {
+    background: white;
+}
+
+.gray {
+    background: gray;
+}
